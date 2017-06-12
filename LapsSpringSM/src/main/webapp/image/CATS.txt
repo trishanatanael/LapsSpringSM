@@ -1,0 +1,49 @@
+CATS
+Insights Found:
+
+1. Check MySQL
+- Course
+- CourseEvent
+- Department
+- Employee (EmployeeID, ManagerID, EmployeeName)
+- Role
+- User (RoleID[Staff, Admin, Manager], UserID[EmployeeID])
+
+2. STS-Java Resources
+> Application Properties
+#DB URL: localhost/cats..
+#EntityManager = edu.iss.cats.model
+
+3. Maven clean > Run on Server
+
+4. Dashboard
+
+5. Packages (Under src/main/java)
+
+a. Controller
+b. Exception
+c. Init
+d. Javabeans
+e. Model
+	> Matches MySQL
+f. Model Comparator
+g. Repository
+	> department
+h. Repository.MySQL
+i. Service
+j. Util
+k. Validator
+
+6. Sitemesh
+- Only several area got updated
+
+7. Use Enumerator
+
+8. Course Mapping
+
+----
+GET A GET method should be used to retrieve data from the server. Multiple get requests to the same URL should be valid and no data should be changed on the server side.
+
+However, this doesn't mean it is not possible to make a GET request change things server side, but you should try to make sure you are following the standard.
+
+POST A POST method should be used when you need to create, update or delete data on the server side. Making the same POST request multiple times may not be safe and may result in inconsistent data. The content of a POST request is sent in the request body. Hence, you don't see the parameters in your browser, but it is easy to see them if you wanted to (Even using the browser developer tools) so it is no more safe than a GET request.
